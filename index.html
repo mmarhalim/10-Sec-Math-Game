@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>10 Second Math Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>10 Second Math Game</h2>
+        <div id="gamescreen">
+          <h3 id="time-left">10</h3>
+          <p>seconds left</p>
+          <h1 id="equation"></h1>
+          <input id="user-input" type="number" />
+          <h4>Current Score: <span id="current-score">0</span></h4>
+          <h4>High Score: <span id="high-score">0</span></h4>
+        </div>
+        <div id="settings">
+          <h4>Settings</h4>
+          <input type="checkbox" id="plus" checked><label for="plus">+</label></input>
+          <input type="checkbox" id="minus"><label for="minus">−</label></input>
+          <input type="checkbox" id="times"><label for="times">×</label></input>
+          <input type="checkbox" id="divide"><label for="divide">÷</label></input>
+          <label for="num-limit">Number Limit<input type="range" id="num-limit" value="10" min="10" max="50"
+              oninput="this.nextElementSibling.value = this.value"><output>10</output></label>
+        </div>
+        <button id="start">Start Game</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
