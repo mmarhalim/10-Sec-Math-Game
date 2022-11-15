@@ -116,6 +116,7 @@ $(document).ready(function () {
     clearInterval(interval);
     interval = undefined;
     updateTimeLeft(10 - timeLeft);
+    $('#user-input').val('');
   });
 
   $('#start').on('click', function () {
