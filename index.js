@@ -61,6 +61,12 @@ $(document).ready(function () {
     var num1 = randomNumberGenerator($('#num-limit').val());
     var num2 = randomNumberGenerator($('#num-limit').val());
 
+    if (operator === '−') {
+      if (num1 <= num2) {
+        return questionGenerator();
+      }
+    }
+
     if (operator === "÷") {
       if(num1 % num2 !== 0 || num1 <= num2 || num2 === 1) {
         return questionGenerator();
